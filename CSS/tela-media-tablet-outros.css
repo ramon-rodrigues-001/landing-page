@@ -1,0 +1,77 @@
+@media (max-width: 850px) {
+    main div#centralizacao button {
+        width: 100px;
+    }
+
+    header div#hamburguer {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        padding: 0px 10px 10px 10px;
+    }
+    nav {
+        display: none;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        text-align: center;
+    }
+
+    div#hamburguer > div#menu > .tracos {
+        background-color: white;
+        margin: 4px;
+        width: 40px;
+        height: 4px;
+    }
+
+    input[type="checkbox"]:checked ~ header {
+        height: 100px;
+    }
+    input[type="checkbox"]:checked ~ header nav {
+        position: absolute;
+        top: 65%;
+        display: inline-block;
+    }
+}
+
+
+
+
+@media (max-width: 650px) {
+    main section#primeiro-container {
+        display: block;
+        width: 90vw;
+    }
+    main div#centralizacao {
+        text-align: center;
+        margin: auto;
+        width: 90vw;
+        height: 200px;
+    }
+    main div#centralizacao div {
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90vw;
+    }
+    main section#primeiro-container img {
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    header nav a#community {
+        display: none;
+    }
+
+
+    main section#primeiro-container img {
+        width: 240px;
+        height: 170px;
+    }
+}

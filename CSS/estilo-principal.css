@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* Max: 850px */
+/* OU 650px */
+
+
+
+            /* RESETANDO O HTML PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: white;
+    background-color: black;
+    height: 100vh;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.2em;
+}
+h3 {
+    font-size: 1.1em
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+
+
+            /* ESTILIZAÇÃO DO  HEADER*/
+header {
+    background-color: rgb(32, 32, 32);
+    position: relative;
+    display: flex;
+    height: 55px;
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+header img {
+    position: absolute;
+    left: 15%;
+    top: 5px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+nav {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 95vw;
+    text-align: right;
+}
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    border: solid 1px transparent;
+    border-bottom: solid 1px white;
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+header a:hover {
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    transform: translateX(-10px);
+    transition: .7s;
+}
+
+header div#hamburguer {
+    display: none;
+}
+
+
+
+            /* ESTILIZAÇÃO DA PRIMEIRA SECTION */
+main section#primeiro-container {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 12px 0px;
+}
+main div#centralizacao {
+    position: relative;
+    height: 267px;
+    width: 50vw;
+}
+main div#centralizacao div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main div#centralizacao h1, h2 {
+    color: white;
+    margin: 5px;
+}
+
+main div#centralizacao button {
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    width: 150px;
+}
+div#centralizacao button#butao-01:hover {
+    color: white;
+    border: solid 2px blue;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 255, 0.207);
+    background-color: rgba(0, 0, 255, 0.112);
+}
+div#centralizacao button#butao-02:hover {
+    color: white;
+    border: solid 2px red;
+    box-shadow: 3px 2px 5px 3px rgba(255, 0, 0, 0.207);
+    background-color: rgba(255, 0, 0, 0.102);
+}
+
+main section#primeiro-container img {
+    width: 350px;
+    height: 270px;
+    animation: animacao 4s infinite;
+    transform: translateY(-15px);
+}
+
+
+
+            /* ESTILIZAÇÃO DA SEGUNDA SECTION */
+main section#segundo-container {
+    text-align: center;
+    border-bottom: solid 1px white;
+    padding-bottom: 20px;
+}
+main section#segundo-container h3 {
+    border-top: solid 1px rgba(255, 255, 255, 0.345);
+    display: inline-block;
+    margin: 20px 10px 10px 10px;
+    padding: 15px;
+}
+main section#segundo-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+    margin: 3px;
+}
+
+
+
+             /* ESTILIZAÇÃO DO FOOTER */
+footer {
+    position: relative;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+
+            /* Animação da imagem flutuante */
+@keyframes animacao {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
